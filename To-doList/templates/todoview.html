@@ -1,363 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 {% load static %}
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+    <meta charset="utf-8">
+    <title>DarkPan - Bootstrap 5 Admin Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-	<!-- title -->
-	<title>View</title>
+    <!-- Favicon -->
+    <link href=" {% static 'img/favicon.ico' %} " rel="icon">
 
-	<!-- favicon -->
-	<link rel="shortcut icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
-	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-	<!-- fontawesome -->
-	<link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
-	<!-- owl carousel -->
-	<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
-	<!-- magnific popup -->
-	<link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
-	<!-- animate css -->
-	<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-	<!-- mean menu css -->
-	<link rel="stylesheet" href="{% static 'assets/css/meanmenu.min.css' %}">
-	<!-- main style -->
-	<link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
-	<!-- responsive -->
-	<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+          rel="stylesheet">
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href=" {% static 'lib/owlcarousel/assets/owl.carousel.min.css' %} " rel="stylesheet">
+    <link href=" {% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %} " rel="stylesheet"/>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href=" {% static 'css/bootstrap.min.css' %} " rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href=" {% static 'css/style.css' %} " rel="stylesheet">
 </head>
+
 <body>
-	
-	<!--PreLoader-->
-    <div class="loader">
-        <div class="loader-inner">
-            <div class="circle"></div>
+<div class="container-fluid position-relative d-flex p-0">
+    <!-- Spinner Start -->
+    <div id="spinner"
+         class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!--PreLoader Ends-->
-	
-	<!-- header -->
-	<div class="top-header-area" id="sticker">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-sm-12 text-center">
-					<div class="main-menu-wrap">
-						<!-- logo -->
-						<div class="site-logo">
-							<a href="index.html">
-								<img src="https://th.bing.com/th/id/R.6dffd49b9b21c72f529e3f076d147464?rik=sSWLOiuWSpIw%2fQ&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fdi7%2fLgd%2fdi7Lgd4xT.png&ehk=92cPQBJePlppvURjXxgnfIQnVSlUqosIGELv22uljtY%3d&risl=&pid=ImgRaw&r=0" alt="">
-							</a>
-						</div>
-						<!-- logo -->
+    <!-- Spinner End -->
 
-						<!-- menu start -->
-						<nav class="main-menu">
-							<ul>
-								<li class="current-list-item"><a href="#">Home</a>
-									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
-									</ul>
-								</li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
-									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
 
-									</ul>
-								</li>
-								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact</a></li>
-									<ul class="sub-menu">
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
-								</li>
-								<li>
-									<div class="header-icons">
-										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
-									</div>
-								</li>
-							</ul>
-						</nav>
-						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
-						<div class="mobile-menu"></div>
-						<!-- menu end -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end header -->
+    <!-- Sidebar Start -->
+    <div class="sidebar pe-4 pb-3">
+        <nav class="navbar bg-secondary navbar-dark">
+            <a href="Home" class="navbar-brand mx-4 mb-3">
+                <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Home</h3>
+            </a>
+            <div class="d-flex align-items-center ms-4 mb-4">
+                <div class="position-relative">
+                    <img class="rounded-circle" src=" {% static 'img/user.jpg' %} " alt=""
+                         style="width: 40px; height: 40px;">
+                    <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                </div>
+                <div class="ms-3">
+                    <h6 class="mb-0">Jhon Doe</h6>
+                    <span>Admin</span>
+                </div>
+            </div>
+            <div class="navbar-nav w-100">
+                <a href=" {% static 'index.html' %} " class="nav-item nav-link active"><i
+                        class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                            class="fa fa-laptop me-2"></i>To-Do</a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href="todoadd" class="dropdown-item">Add</a>
+                        <a href="todoview" class="dropdown-item">View</a>
+                    </div>
+                </div>
+                <a href=" {% static 'widget.html' %} " class="nav-item nav-link"><i
+                        class="fa fa-th me-2"></i>Widgets</a>
+                <a href=" {% static 'form.html' %} " class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                <a href=" {% static 'table.html' %} " class="nav-item nav-link"><i
+                        class="fa fa-table me-2"></i>Tables</a>
+                <a href=" {% static 'chart.html' %} " class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                            class="far fa-file-alt me-2"></i>Pages</a>
+                    <div class="dropdown-menu bg-transparent border-0">
+                        <a href=" {% static 'signin.html' %} " class="dropdown-item">Sign In</a>
+                        <a href=" {% static 'signup.html' %} " class="dropdown-item">Sign Up</a>
+                        <a href=" {% static '404.html' %} " class="dropdown-item">404 Error</a>
+                        <a href=" {% static 'blank.html' %} " class="dropdown-item">Blank Page</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Sidebar End -->
 
-	<!-- search area -->
-	<div class="search-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<span class="close-btn"><i class="fas fa-window-close"></i></span>
-					<div class="search-bar">
-						<div class="search-bar-tablecell">
-							<h3>Search For:</h3>
-							<input type="text" placeholder="Keywords">
-							<button type="submit">Search <i class="fas fa-search"></i></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end search arewa -->
-	
-	<!-- breadcrumb-section -->
-	<div class="breadcrumb-section breadcrumb-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="breadcrumb-text">
-						<h1>To-Do View</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end breadcrumb section -->
 
-<!--	&lt;!&ndash; products &ndash;&gt;-->
-<!--	<div class="product-section mt-150 mb-150">-->
-<!--		<div class="container">-->
+    <!-- Content Start -->
+    <div class="content">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+            <a href=" {% static 'index.html' %} " class="navbar-brand d-flex d-lg-none me-4">
+                <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+            </a>
+            <a href="#" class="sidebar-toggler flex-shrink-0">
+                <i class="fa fa-bars"></i>
+            </a>
+            <form class="d-none d-md-flex ms-4">
+                <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+            </form>
+            <div class="navbar-nav align-items-center ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-envelope me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Message</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" src=" {% static 'img/user.jpg' %} " alt=""
+                                     style="width: 40px; height: 40px;">
+                                <div class="ms-2">
+                                    <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                    <small>15 minutes ago</small>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" src=" {% static 'img/user.jpg' %} " alt=""
+                                     style="width: 40px; height: 40px;">
+                                <div class="ms-2">
+                                    <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                    <small>15 minutes ago</small>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" src=" {% static 'img/user.jpg' %} " alt=""
+                                     style="width: 40px; height: 40px;">
+                                <div class="ms-2">
+                                    <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                    <small>15 minutes ago</small>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item text-center">See all message</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Notificatin</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">Profile updated</h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">New user added</h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">Password changed</h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item text-center">See all notifications</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <img class="rounded-circle me-lg-2" src=" {% static 'img/user.jpg' %} " alt=""
+                             style="width: 40px; height: 40px;">
+                        <span class="d-none d-lg-inline-flex">John Doe</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">My Profile</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <a href="#" class="dropdown-item">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
 
-<!--			<div class="row">-->
-<!--                <div class="col-md-12">-->
-<!--                    <div class="product-filters">-->
-<!--                        <ul>-->
-<!--                            <li class="active" data-filter="*">All</li>-->
-<!--                            <li data-filter=".strawberry">Strawberry</li>-->
-<!--                            <li data-filter=".berry">Berry</li>-->
-<!--                            <li data-filter=".lemon">Lemon</li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
 
-<!--			<div class="row product-lists">-->
-<!--				<div class="col-lg-4 col-md-6 text-center strawberry">-->
-<!--					<div class="single-product-item">-->
-<!--						<div class="product-image">-->
-<!--							<a href="single-product.html"><img src="{% static 'assets/img/products/product-img-1.jpg" alt=""></a>-->
-<!--						</div>-->
-<!--						<h3>Strawberry</h3>-->
-<!--						<p class="product-price"><span>Per Kg</span> 85$ </p>-->
-<!--						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-lg-4 col-md-6 text-center berry">-->
-<!--					<div class="single-product-item">-->
-<!--						<div class="product-image">-->
-<!--							<a href="single-product.html"><img src="{% static 'assets/img/products/product-img-2.jpg" alt=""></a>-->
-<!--						</div>-->
-<!--						<h3>Berry</h3>-->
-<!--						<p class="product-price"><span>Per Kg</span> 70$ </p>-->
-<!--						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-lg-4 col-md-6 text-center lemon">-->
-<!--					<div class="single-product-item">-->
-<!--						<div class="product-image">-->
-<!--							<a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>-->
-<!--						</div>-->
-<!--						<h3>Lemon</h3>-->
-<!--						<p class="product-price"><span>Per Kg</span> 35$ </p>-->
-<!--						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-lg-4 col-md-6 text-center">-->
-<!--					<div class="single-product-item">-->
-<!--						<div class="product-image">-->
-<!--							<a href="single-product.html"><img src="assets/img/products/product-img-4.jpg" alt=""></a>-->
-<!--						</div>-->
-<!--						<h3>Avocado</h3>-->
-<!--						<p class="product-price"><span>Per Kg</span> 50$ </p>-->
-<!--						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-lg-4 col-md-6 text-center">-->
-<!--					<div class="single-product-item">-->
-<!--						<div class="product-image">-->
-<!--							<a href="single-product.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>-->
-<!--						</div>-->
-<!--						<h3>Green Apple</h3>-->
-<!--						<p class="product-price"><span>Per Kg</span> 45$ </p>-->
-<!--						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-lg-4 col-md-6 text-center strawberry">-->
-<!--					<div class="single-product-item">-->
-<!--						<div class="product-image">-->
-<!--							<a href="single-product.html"><img src="assets/img/products/product-img-6.jpg" alt=""></a>-->
-<!--						</div>-->
-<!--						<h3>Strawberry</h3>-->
-<!--						<p class="product-price"><span>Per Kg</span> 80$ </p>-->
-<!--						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
+        <!-- Recent Sales Start -->
+        <div class="container-fluid pt-4 px-4">
+            <div class="bg-secondary text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">Welcome</h6>
+                    <a href="">Show All</a>
+                </div>
+                <div class="table-responsive">
+                    <div class=" d-flex justify-content-center pt-5">
+                        <table class=" table table-bordered col-6 ">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Date</th>
+                                <th>Title</th>
+                                <th>Subject</th>
+                                <th colspan="2">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                            {% for todo in data %}
 
-<!--			<div class="row">-->
-<!--				<div class="col-lg-12 text-center">-->
-<!--					<div class="pagination-wrap">-->
-<!--						<ul>-->
-<!--							<li><a href="#">Prev</a></li>-->
-<!--							<li><a href="#">1</a></li>-->
-<!--							<li><a class="active" href="#">2</a></li>-->
-<!--							<li><a href="#">3</a></li>-->
-<!--							<li><a href="#">Next</a></li>-->
-<!--						</ul>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--	&lt;!&ndash; end products &ndash;&gt;-->
+                            <tr>
+                                <td>{{ forloop.counter}}</td>
+                                <td>{{todo.date}}</td>
 
-<!--	&lt;!&ndash; logo carousel &ndash;&gt;-->
-<!--	<div class="logo-carousel-section">-->
-<!--		<div class="container">-->
-<!--			<div class="row">-->
-<!--				<div class="col-lg-12">-->
-<!--					<div class="logo-carousel-inner">-->
-<!--						<div class="single-logo-item">-->
-<!--							<img src="assets/img/company-logos/1.png" alt="">-->
-<!--						</div>-->
-<!--						<div class="single-logo-item">-->
-<!--							<img src="assets/img/company-logos/2.png" alt="">-->
-<!--						</div>-->
-<!--						<div class="single-logo-item">-->
-<!--							<img src="assets/img/company-logos/3.png" alt="">-->
-<!--						</div>-->
-<!--						<div class="single-logo-item">-->
-<!--							<img src="assets/img/company-logos/4.png" alt="">-->
-<!--						</div>-->
-<!--						<div class="single-logo-item">-->
-<!--							<img src="assets/img/company-logos/5.png" alt="">-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--	&lt;!&ndash; end logo carousel &ndash;&gt;-->
+                                <td>{{todo.title}}</td>
 
-<!--	&lt;!&ndash; footer &ndash;&gt;-->
-<!--	<div class="footer-area">-->
-<!--		<div class="container">-->
-<!--			<div class="row">-->
-<!--				<div class="col-lg-3 col-md-6">-->
-<!--					<div class="footer-box about-widget">-->
-<!--						<h2 class="widget-title">About us</h2>-->
-<!--						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-lg-3 col-md-6">-->
-<!--					<div class="footer-box get-in-touch">-->
-<!--						<h2 class="widget-title">Get in Touch</h2>-->
-<!--						<ul>-->
-<!--							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>-->
-<!--							<li>support@fruitkha.com</li>-->
-<!--							<li>+00 111 222 3333</li>-->
-<!--						</ul>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-lg-3 col-md-6">-->
-<!--					<div class="footer-box pages">-->
-<!--						<h2 class="widget-title">Pages</h2>-->
-<!--						<ul>-->
-<!--							<li><a href="index.html">Home</a></li>-->
-<!--							<li><a href="about.html">About</a></li>-->
-<!--							<li><a href="services.html">Shop</a></li>-->
-<!--							<li><a href="news.html">News</a></li>-->
-<!--							<li><a href="contact.html">Contact</a></li>-->
-<!--						</ul>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-lg-3 col-md-6">-->
-<!--					<div class="footer-box subscribe">-->
-<!--						<h2 class="widget-title">Subscribe</h2>-->
-<!--						<p>Subscribe to our mailing list to get the latest updates.</p>-->
-<!--						<form action="index.html">-->
-<!--							<input type="email" placeholder="Email">-->
-<!--							<button type="submit"><i class="fas fa-paper-plane"></i></button>-->
-<!--						</form>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--	&lt;!&ndash; end footer &ndash;&gt;-->
-<!--	-->
-<!--	&lt;!&ndash; copyright &ndash;&gt;-->
-<!--	<div class="copyright">-->
-<!--		<div class="container">-->
-<!--			<div class="row">-->
-<!--				<div class="col-lg-6 col-md-12">-->
-<!--					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>-->
-<!--						Distributed By - <a href="https://themewagon.com/">Themewagon</a>-->
-<!--					</p>-->
-<!--				</div>-->
-<!--				<div class="col-lg-6 text-right col-md-12">-->
-<!--					<div class="social-icons">-->
-<!--						<ul>-->
-<!--							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>-->
-<!--							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>-->
-<!--							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>-->
-<!--							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>-->
-<!--							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>-->
-<!--						</ul>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-	<!-- end copyright -->
-	
-	<!-- jquery -->
-	<script src="{% static 'assets/js/jquery-1.11.3.min.js' %}"></script>
-	<!-- bootstrap -->
-	<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
-	<!-- count down -->
-	<script src="{% static 'assets/js/jquery.countdown.js' %}"></script>
-	<!-- isotope -->
-	<script src="{% static 'assets/js/jquery.isotope-3.0.6.min.js' %}"></script>
-	<!-- waypoints -->
-	<script src="{% static 'assets/js/waypoints.js' %}"></script>
-	<!-- owl carousel -->
-	<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
-	<!-- magnific popup -->
-	<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
-	<!-- mean menu -->
-	<script src="{% static 'assets/js/jquery.meanmenu.min.js' %}"></script>
-	<!-- sticker js -->
-	<script src="{% static 'assets/js/sticker.js' %}"></script>
-	<!-- main js -->
-	<script src="{% static 'assets/js/main.js' %}"></script>
+                                <td>{{todo.subject}}</td>
+                                <td>
+                                    <a href="{% url 'update' todo.id %}" class="btn btn-outline-danger --bs-primary-rgb">Update</a>
+                                </td>
+                                <td><a href="{% url 'delete' todo.id %}" class="btn btn-outline-danger">Delete</a></td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
 
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Recent Sales End -->
+
+
+        <!-- Widgets Start -->
+        <div class="container-fluid pt-4 px-4">
+            <div class="row g-4">
+
+            </div>
+        </div>
+        <!-- Widgets End -->
+
+
+    </div>
+    <!-- Content End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src=" {% static 'lib/chart/chart.min.js' %} "></script>
+<script src=" {% static 'lib/easing/easing.min.js' %} "></script>
+<script src=" {% static 'lib/waypoints/waypoints.min.js' %} "></script>
+<script src=" {% static 'lib/owlcarousel/owl.carousel.min.js' %} "></script>
+<script src=" {% static 'lib/tempusdominus/js/moment.min.js' %} "></script>
+<script src=" {% static 'lib/tempusdominus/js/moment-timezone.min.js' %} "></script>
+<script src=" {% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %} "></script>
+
+<!-- Template Javascript -->
+<script src=" {% static 'js/main.js' %} "></script>
 </body>
+
 </html>
