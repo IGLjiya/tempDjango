@@ -15,5 +15,5 @@ urlpatterns =[
     #delete
     path('delete/<int:id>/',views.deleteData,name="delete"),
     #update
-    path('updata/<int:id>/',views.updateData,name='update')
+    path('update/<int:id>/',views.updateData,name='update')
 ]
